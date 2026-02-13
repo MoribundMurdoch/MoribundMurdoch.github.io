@@ -1,0 +1,168 @@
+/* ============ Header (Chalkboard Style) ============ */
+
+.site-header {
+    padding: 40px 0 30px;
+}
+
+/* Grid Layout: Logo | Center | Right */
+.site-header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.site-header__grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ============ Logo (Left) ============ */
+
+.site-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.site-header__logoImg {
+    width: 150px; /* 👈 Adjust this to control size */
+    height: auto;
+    display: block;
+
+    filter:
+        contrast(1.05)
+        brightness(1.05)
+        drop-shadow(0 0 4px rgba(255,255,255,0.15))
+        drop-shadow(0 0 10px rgba(255,255,255,0.06));
+}
+
+/* Fallback letters if no logo */
+.site-header__logoFallback {
+    font-family: "IM Fell English", serif;
+    font-size: 1.8rem;
+    color: #f5f4ef;
+}
+
+/* ============ Center (Title + Tagline + Search) ============ */
+
+.site-header__center {
+    text-align: center;
+}
+
+/* Main Title */
+.site-title {
+    font-family: "IM Fell English", serif;
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    margin: 0 0 10px;
+    color: #f5f4ef;
+
+    text-shadow:
+        0 0 2px rgba(255,255,255,0.12),
+        0 0 6px rgba(255,255,255,0.06);
+}
+
+/* Decorative chalk underline */
+.site-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    margin: 14px auto 0;
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 0 6px rgba(255,255,255,0.08);
+    transform: rotate(-0.6deg);
+}
+
+/* Tagline */
+.site-tagline {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    margin: 10px 0 14px;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+    color: #e8e4da;
+}
+
+/* ============ Right Side (Notification Bell) ============ */
+
+.site-header__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Subtle divider under header */
+.site-header::after {
+    content: "";
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    height: 1px;
+    margin: 32px auto 0;
+    background: rgba(255,255,255,0.08);
+}
+/* ============ Tag Pills Strip (Full Width) ============ */
+
+.tag-pills {
+    width: 100%;
+    margin-top: 28px;
+    padding: 12px 0 4px;
+}
+
+/* Horizontal single-row layout */
+.tag-pills__list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    flex-wrap: nowrap;          /* force single row */
+    gap: 10px;
+
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;      /* Firefox */
+}
+
+/* Hide scrollbar (Chrome/Safari) */
+.tag-pills__list::-webkit-scrollbar {
+    display: none;
+}
+
+.tag-pills__item {
+    flex-shrink: 0;
+}
+
+/* Chalk-style pills */
+.tag-pills__link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+
+    color: #f5f4ef;
+    text-decoration: none;
+
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.02);
+
+    white-space: nowrap;
+    transition: all 0.2s ease;
+
+    box-shadow:
+        0 0 4px rgba(255,255,255,0.05),
+        inset 0 0 6px rgba(255,255,255,0.03);
+}
+
+.tag-pills__link:hover {
+    border-color: rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.05);
+    box-shadow:
+        0 0 6px rgba(255,255,255,0.08),
+        inset 0 0 8px rgba(255,255,255,0.05);
+}

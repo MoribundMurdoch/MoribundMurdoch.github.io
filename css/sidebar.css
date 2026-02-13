@@ -1,0 +1,210 @@
+/* =========================================================
+   sidebar.css — Sidebar + Panels Dock (works with .layout + .panel)
+   IMPORTANT: Layout grid lives in base.css (.layout { display:grid... })
+========================================================= */
+
+/* ============================
+   Sidebar column stacking
+============================ */
+
+.leftSidebar,
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Tighten inner blocks inside sidebars (if you render extra .panel blocks inside them) */
+.leftSidebar .panel,
+.rightSidebar .panel {
+  padding: 16px;
+}
+
+/* Optional: headings inside sidebars */
+.leftSidebar h2,
+.leftSidebar h3,
+.rightSidebar h2,
+.rightSidebar h3 {
+  margin-top: 0;
+}
+
+/* ============================
+   Minimize button (baseof uses .panel__minimize)
+============================ */
+
+.panel__minimize {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  background: rgba(0,0,0,0.12);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.92);
+
+  cursor: pointer;
+  padding: 2px 10px;
+  font-family: serif;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+
+.panel__minimize:hover {
+  border-color: rgba(255,255,255,0.65);
+  background: rgba(0,0,0,0.22);
+}
+
+/* If panels are minimized via panels.js */
+.panel--hidden {
+  display: none !important;
+}
+
+/* ============================
+   TOC / nav lists (generic)
+============================ */
+
+.toc-panel__title {
+  margin: 0 0 10px;
+}
+
+/* Hugo's .TableOfContents usually outputs <nav id="TableOfContents"><ul>... */
+.toc-panel__nav ul,
+.leftSidebar nav ul,
+.rightSidebar nav ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.toc-panel__nav li,
+.leftSidebar nav li,
+.rightSidebar nav li {
+  margin: 8px 0;
+}
+
+.toc-panel__nav a,
+.leftSidebar nav a,
+.rightSidebar nav a {
+  opacity: 0.92;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.toc-panel__nav a:hover,
+.leftSidebar nav a:hover,
+.rightSidebar nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ============================
+   Right sidebar lists (archives, links, etc.)
+============================ */
+
+.rightSidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.rightSidebar li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.20);
+}
+
+.rightSidebar li:first-child {
+  border-top: 0;
+}
+
+/* If your right sidebar also contains plain anchor lists */
+.rightSidebar a {
+  font-size: 1.1rem;
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.rightSidebar a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ============================
+   Panel Dock (minimized “folder tabs”)
+   HTML: <div id="panelDock" class="panel-dock"></div>
+   JS adds: <button class="panel-tab">LeftSidebar</button>
+============================ */
+
+/* Dock sits above footer, like a folder-tab strip */
+.panel-dock {
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-end;
+
+  padding: 8px 12px 10px;
+  margin: 0 auto;
+  max-width: var(--layout-max, 1400px);
+
+  /* subtle chalkboard bar */
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Folder-tab look */
+.panel-tab {
+  position: relative;
+  cursor: pointer;
+
+  padding: 8px 14px 7px;
+  border: 1px solid rgba(255,255,255,0.30);
+  border-bottom: none;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  background: rgba(0,0,0,0.25);
+  color: rgba(255,255,255,0.92);
+  font-family: "IM Fell English", serif;
+  font-size: 0.98rem;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  transform: translateY(2px);
+}
+
+.panel-tab:hover {
+  border-color: rgba(255,255,255,0.55);
+  background: rgba(0,0,0,0.35);
+}
+
+/* little “folder notch” */
+.panel-tab::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -6px;
+  width: 26px;
+  height: 8px;
+
+  border: 1px solid rgba(255,255,255,0.30);
+  border-bottom: none;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: rgba(0,0,0,0.25);
+}
+
+/* If there are no tabs, collapse the bar so it doesn't waste space */
+.panel-dock:empty {
+  display: none;
+}
+
+/* Make sure footer doesn't cover the sticky dock visually */
+footer {
+  position: relative;
+  z-index: 1;
+}

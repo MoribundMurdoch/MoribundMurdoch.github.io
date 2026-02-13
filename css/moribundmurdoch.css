@@ -1,0 +1,101 @@
+/* Screen-reader-only utility */
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+.md-header {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(120, 255, 240, 0.18);
+  background: radial-gradient(ellipse at center, rgba(40, 255, 240, 0.12), rgba(0,0,0,0) 65%);
+}
+
+.md-header__inner{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: grid;
+  grid-template-columns: 110px 1fr 110px;
+  align-items: center;
+  gap: 18px;
+}
+
+.md-header__logo{
+  width: 84px; height: 84px;
+  border-radius: 12px;
+  border: 1px solid rgba(120, 255, 240, 0.25);
+  box-shadow: 0 0 22px rgba(120, 255, 240, 0.22);
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none;
+}
+
+.md-header__logo img{ width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+.md-header__logoFallback{ color: rgba(170,255,245,0.9); font-weight: 700; }
+
+.md-header__center{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.md-header__title{
+  font-size: 56px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: rgba(180,255,248,0.92);
+  text-shadow: 0 0 18px rgba(120, 255, 240, 0.35);
+}
+
+.md-search{
+  width: min(680px, 100%);
+  display:flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(120, 255, 240, 0.28);
+  box-shadow: 0 0 22px rgba(120, 255, 240, 0.18);
+  padding: 8px 10px;
+  gap: 10px;
+}
+
+.md-search__input{
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: rgba(220,255,252,0.95);
+  font-size: 18px;
+}
+
+.md-search__input::placeholder{ color: rgba(220,255,252,0.55); }
+
+.md-search__btn{
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(120, 255, 240, 0.25);
+  background: rgba(0,0,0,0.35);
+  color: rgba(220,255,252,0.9);
+  cursor: pointer;
+}
+
+.md-header__right{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.md-bell{
+  width: 54px; height: 54px;
+  border-radius: 999px;
+  border: 1px solid rgba(120, 255, 240, 0.25);
+  background: rgba(0,0,0,0.25);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: rgba(220,255,252,0.9);
+  text-decoration:none;
+  box-shadow: 0 0 18px rgba(120, 255, 240, 0.14);
+}
+
+.md-bell:hover, .md-search__btn:hover{
+  box-shadow: 0 0 26px rgba(120, 255, 240, 0.28);
+}

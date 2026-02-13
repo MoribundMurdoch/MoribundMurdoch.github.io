@@ -1,0 +1,13 @@
+/* Only applies when body has .page-taxonomy or .page-terms */
+body.page-taxonomy .mainContent,
+body.page-terms .mainContent {
+  max-width: none;
+  width: 100%;
+}
+
+/* Optional: reduce padding so it feels like Tumblr */
+body.page-taxonomy .mainContent,
+body.page-terms .mainContent {
+  padding-left: 24px;
+  padding-right: 24px;
+}

@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MoribundMurdoch</title>
+    <link>https://moribundmurdoch.github.io/categories/</link>
+    <description>Latest posts from MoribundMurdoch</description>
+    <generator>Hugo</generator>
+
+    <atom:link href="https://moribundmurdoch.github.io/categories/" rel="self" type="application/rss+xml" />
+
+    
+      <item>
+        <title>About</title>
+        <link>https://moribundmurdoch.github.io/about/</link>
+        <pubDate>Thu, 12 Feb 2026 07:13:53 -0500</pubDate>
+        <guid>https://moribundmurdoch.github.io/about/</guid>
+        <description>&lt;![CDATA[<p>Hello I am &lsquo;MoribundMurdoch&rsquo; i.e. a Murdoch whoo happens to be &ldquo;moribund&rsquo; or in &rsquo;the process of dying&rsquo; I&rsquo;m a  lexicographer and your friendly neighborhood hypochondriac, serving up his visionary idiocy with unwavering commitment.</p>]]></description>
+      </item>
+    
+  </channel>
+</rss>

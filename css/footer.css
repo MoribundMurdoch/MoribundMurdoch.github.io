@@ -1,0 +1,190 @@
+/* =========================================================
+   footer.css — Chalkboard Footer System
+========================================================= */
+
+.footer-container {
+  position: relative;
+  margin-top: 80px;
+  background: linear-gradient(180deg, #0b0b0b, #050505);
+  border-top: 2px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  font-family: "Cormorant Garamond", serif;
+}
+
+#socket {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 24px 30px;
+}
+
+/* ============================
+   Footer Grid Layout
+============================ */
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* ============================
+   Footer Columns
+============================ */
+
+.footer-column h3 {
+  font-family: "IM Fell English", serif;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: #f2efe7;
+  letter-spacing: 0.3px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 1.05rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ============================
+   Legal / Copyright
+============================ */
+
+.copyright {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.copyright a {
+  color: #f2efe7;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Powered by Blogger
+============================ */
+
+.powered-by-blogger {
+  margin-top: 24px;
+  font-size: 0.9rem;
+}
+
+.powered-by-blogger a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+}
+
+.blogger-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ============================
+   Back to Top
+============================ */
+
+.back-to-top {
+  margin-top: 50px;
+  text-align: left;
+}
+
+#back-to-top {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  font-family: "IM Fell English", serif;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+#back-to-top:hover {
+  border-color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.05);
+}
+
+/* ============================
+   Music Footer Bar
+============================ */
+
+#music-footer-bar {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+#music-footer-bar button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#music-footer-bar button:hover {
+  border-color: rgba(255,255,255,0.65);
+}
+
+#track-label {
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+}
+
+#track-label:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Responsive
+============================ */
+
+@media (max-width: 900px) {
+
+  #socket {
+    padding: 50px 16px 24px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  #music-footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .back-to-top {
+    text-align: center;
+  }
+}

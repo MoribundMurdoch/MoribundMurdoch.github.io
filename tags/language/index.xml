@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MoribundMurdoch</title>
+    <link>http://localhost:1313/tags/language/</link>
+    <description>Latest posts from MoribundMurdoch</description>
+    <generator>Hugo</generator>
+
+    <atom:link href="http://localhost:1313/tags/language/" rel="self" type="application/rss+xml" />
+
+    
+      <item>
+        <title>Language Learning Potvaliancy</title>
+        <link>http://localhost:1313/posts/language-learning-potvaliancy/</link>
+        <pubDate>Thu, 12 Feb 2026 10:46:56 -0500</pubDate>
+        <guid>http://localhost:1313/posts/language-learning-potvaliancy/</guid>
+        <description>&lt;![CDATA[<h2 id="the-problem-with-overly-regimental-teaching">The Problem with Overly Regimental Teaching</h2>
+<p>Overly regimental teaching when learning a foreign language stunts students creativity and facilitates fysigunkus [a lack of curiosity]. When I’m referring to, “overly regimental teaching”, I’m not referring to its organizational structure; I’m referring to its limited contextual real world experience.</p>
+<hr>
+<h2 id="perry-and-the-pub-method">Perry and the Pub Method</h2>
+<p>To be blunt, my mate Perry, (from Portugal a native Portuguese speaker), learnt his English most effectively whilst in a slight state of inebriation.</p>]]></description>
+      </item>
+    
+  </channel>
+</rss>
