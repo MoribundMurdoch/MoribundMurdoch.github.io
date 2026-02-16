@@ -3,18 +3,88 @@
 ========================================================= */
 
 .footer-container {
-  position: relative;
-  margin-top: 80px;
+  position: relative; /* anchor for dock */
+  margin-top: 24px;   /* was 80px — reduce the big visual gap */
   background: linear-gradient(180deg, #0b0b0b, #050505);
   border-top: 2px solid rgba(255,255,255,0.15);
   color: rgba(255,255,255,0.85);
   font-family: "Cormorant Garamond", serif;
 }
 
+/* Content wrapper */
 #socket {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 24px 30px;
+
+  /* Was 60px top — leaves room for dock but avoids a giant “dead band” */
+  padding: 34px 24px 30px;
+}
+
+/* ============================
+   Panel Dock — Tabs ON the footer border line
+   Goal: tabs sit on the same white line (border-top)
+============================ */
+
+/* Assumes #panelDock is a direct child of .footer-container (not inside #socket) */
+.footer-container > #panelDock {
+  position: absolute;
+  top: 0; /* exact border-top line */
+  left: 50%;
+  transform: translate(-50%, -50%); /* straddle the line */
+
+  display: flex;
+  gap: 10px;
+
+  z-index: 100;
+  pointer-events: auto;
+
+  /* Make sure it doesn’t create layout space even if other styles exist */
+  height: 0;
+}
+
+/* Each minimized tab */
+.footer-container > #panelDock .panel-tab {
+  /* Match footer background so it feels connected */
+  background: linear-gradient(180deg, #0b0b0b, #050505);
+  color: rgba(255,255,255,0.88);
+
+  /* Tab outline */
+  border: 1px solid rgba(255,255,255,0.22);
+
+  /* Key: merge into footer surface */
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0; /* only top corners */
+
+  padding: 10px 14px 8px;
+  font-family: "IM Fell English", serif;
+  font-size: 0.95rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  /* Small lip to help it read as "attached" */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+
+/* Hover/active */
+.footer-container > #panelDock .panel-tab:hover {
+  border-color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.97);
+  background: linear-gradient(180deg, #111111, #070707);
+}
+
+/* Keep the border line continuous behind the dock */
+.footer-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  height: 2px; /* match border-top thickness */
+  background: rgba(255,255,255,0.15);
+
+  z-index: 5;
 }
 
 /* ============================
@@ -78,15 +148,15 @@
 }
 
 /* ============================
-   Powered by Blogger
+   Powered by GitHub Pages
 ============================ */
 
-.powered-by-blogger {
+.powered-by-github {
   margin-top: 24px;
   font-size: 0.9rem;
 }
 
-.powered-by-blogger a {
+.powered-by-github a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -94,7 +164,7 @@
   color: rgba(255,255,255,0.8);
 }
 
-.blogger-icon {
+.github-icon {
   width: 18px;
   height: 18px;
   fill: currentColor;
@@ -172,7 +242,7 @@
 @media (max-width: 900px) {
 
   #socket {
-    padding: 50px 16px 24px;
+    padding: 30px 16px 24px; /* tighter on small screens */
   }
 
   .footer-content {
@@ -186,5 +256,15 @@
 
   .back-to-top {
     text-align: center;
+  }
+
+  /* Keep dock centered & readable on small screens */
+  .footer-container > #panelDock {
+    gap: 8px;
+  }
+
+  .footer-container > #panelDock .panel-tab {
+    padding: 9px 12px 7px;
+    font-size: 0.9rem;
   }
 }

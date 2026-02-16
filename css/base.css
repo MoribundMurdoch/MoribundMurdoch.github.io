@@ -129,10 +129,6 @@ main {
   min-width: 0;
 }
 
-/* NOTE:
-   baseof.html already gives the 3 columns the .panel class.
-   Don't add extra wrappers with their own layout systems inside the columns. */
-
 /* Center column spacing: treat the MAIN panel as the "content container". */
 .mainContent {
   padding: var(--main-pad-y) var(--main-pad-x) var(--main-pad-bottom);
@@ -147,6 +143,44 @@ main {
 /* If panels are disabled, still keep things readable */
 .layout:not(.layout--panels) .panel__minimize {
   display: none;
+}
+
+/* ============ Draggable / Resizable Panels Mode ============ */
+/* When panels are enabled, let sidebars size to their own width (so resizing works). */
+.layout.layout--panels {
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+}
+
+/* Start sizes for sidebars (Interact will override with inline width/height). */
+.layout.layout--panels .leftSidebar {
+  width: var(--layout-left);
+  justify-self: start;
+  align-self: start;
+}
+
+.layout.layout--panels .rightSidebar {
+  width: var(--layout-right);
+  justify-self: start;
+  align-self: start;
+}
+
+/* Main fills the remaining column by default; keep it sane. */
+.layout.layout--panels .mainContent {
+  justify-self: stretch;
+  align-self: start;
+}
+
+/* Interact needs these on the actual class you use (.resize-drag). */
+.resize-drag {
+  position: relative;
+  touch-action: none;      /* important for pointer dragging/resizing */
+  box-sizing: border-box;  /* makes width/height behave sanely */
+}
+
+/* Optional dragging affordance (Interact doesn't add this automatically) */
+.resize-drag.is-dragging {
+  user-select: none;
+  cursor: grabbing;
 }
 
 /* Mobile collapse */
@@ -167,6 +201,12 @@ main {
   .mainContent { order: 1; }
   .leftSidebar { order: 2; }
   .rightSidebar { order: 3; }
+
+  /* On mobile, don't fight the single-column layout with fixed widths */
+  .layout.layout--panels .leftSidebar,
+  .layout.layout--panels .rightSidebar {
+    width: auto;
+  }
 }
 
 /* ============ Helpers / Components ============ */
@@ -245,14 +285,13 @@ html { scroll-behavior: smooth; }
 #prevart { text-align: left; }
 #nextart { text-align: right; }
 
-/* draggable panels */
+/* Legacy class (keep harmless, but your system uses .resize-drag now) */
 .draggable {
   position: relative;
-  touch-action: none;      /* important for pointer dragging */
+  touch-action: none;
 }
 
 .draggable.is-dragging {
   user-select: none;
   cursor: grabbing;
 }
-
