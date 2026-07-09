@@ -3,246 +3,104 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>About | MoribundMurdoch</title>
-
-    
+    <title>About · MoribundMurdoch.github.io</title>
+    <meta
+      name="description"
+      content="What this GitHub Pages site is for — and what it is not."
+    />
+    <link rel="icon" href="../img/mor-icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+English:ital@0;1&display=swap"
-  rel="stylesheet"
-/>
-
-    <link rel="stylesheet" href="https://moribundmurdoch.github.io/css/base.css" /><link rel="stylesheet" href="https://moribundmurdoch.github.io/css/header.css" /><link rel="stylesheet" href="https://moribundmurdoch.github.io/css/sidebar.css" /><link rel="stylesheet" href="https://moribundmurdoch.github.io/css/footer.css" />
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+English:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/site.css" />
   </head>
-
-  <body class="">
+  <body>
     <header class="site-header">
-  <div class="site-header__inner">
-
-    <div class="site-header__grid">
-
-      
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="site-nav__link" href="https://moribundmurdoch.github.io/">Home</a><a class="site-nav__link" href="https://moribundmurdoch.github.io/murdoverse/">Murdoverse</a><a class="site-nav__link" href="https://moribundmurdoch.github.io/about/">About</a><a class="site-nav__link" href="https://moribundmurdoch.github.io/posts/">Posts</a></nav>
-
-      
-      <a class="site-header__logo" href="https://moribundmurdoch.github.io/" aria-label="MoribundMurdoch">
-        
-          <img
-            class="site-header__logoImg"
-            src="https://moribundmurdoch.github.io/img/mor-icon.png"
-            alt="MoribundMurdoch logo"
-          />
-        
-      </a>
-
-      
-      <div class="site-header__center">
-        <a class="site-header__titleLink" href="https://moribundmurdoch.github.io/">
-          <h1 class="site-title">MoribundMurdoch</h1>
+      <div class="wrap site-header__row">
+        <a class="brand" href="../">
+          <img class="brand__mark" src="../img/mor-icon.png" width="52" height="52" alt="" />
+          <span class="brand__text">
+            <span class="brand__title">MoribundMurdoch</span>
+            <span class="brand__sub">GitHub Pages · tools shelf</span>
+          </span>
         </a>
-
-        
-          <p class="site-tagline">Lexicography, language, and assorted moribundities.</p>
-        
-
-        <form class="md-search" action="https://moribundmurdoch.github.io/search/" method="get" role="search">
-  <label class="sr-only" for="q">Search</label>
-  <input class="md-search__input" id="q" name="q" type="search" placeholder="Search" />
-  <button class="md-search__btn" type="submit" aria-label="Search">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-    </svg>
-  </button>
-</form>
-
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../">Tools</a>
+          <a href="../#murdoverse">Murdoverse</a>
+          <a href="./" aria-current="page">About</a>
+          <a href="https://moribundmurdoch.com/" rel="noopener">Main site</a>
+        </nav>
       </div>
-
-      
-      <div class="site-header__right">
-        <a class="md-bell" href="#" aria-label="Notifications">
-  
-  <svg class="md-bell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Z" stroke="currentColor" stroke-width="1.6"/>
-    <path d="M18 16v-5a6 6 0 1 0-12 0v5l-2 2h16l-2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-  </svg>
-  
-</a>
-
-      </div>
-
-    </div>
-  </div>
-
-  
-</header>
-
-    <div class="layout layout--panels" role="region" aria-label="Page layout">
-
-      <aside id="leftSidebar"
-               class="leftSidebar panel panel--left resize-drag"
-               data-paneldata-drag-handle=".panel__minimize"role="complementary"
-               aria-label="Left sidebar"><button class="panel__minimize"
-                    data-panel="leftSidebar"
-                    type="button"
-                    aria-label="Minimize left sidebar"
-                    title="Minimize">–</button>
-
-<section class="toc-panel">
-
-  <h3 class="toc-panel__title">Contents</h3><nav class="toc-panel__nav" aria-label="Table of contents">
-      <nav id="TableOfContents"></nav>
-    </nav></section>
-
-        </aside>
-      <main id="mainContent"
-            class="mainContent panel panel--main resize-drag"
-            data-paneldata-drag-handle=".panel__minimize"role="main"
-            aria-label="Main content"><button class="panel__minimize"
-                  data-panel="mainContent"
-                  type="button"
-                  aria-label="Minimize main content"
-                  title="Minimize">–</button>
-  <article class="post">
-
-    <header class="post__header">
-      <h1 class="post__title">About</h1>
-
-      
-        <p class="post__meta">
-          <time datetime="2026-02-12">
-            February 12, 2026
-          </time>
-        </p>
-      
     </header>
 
-    <section class="post__content">
-      <p>Hello I am &lsquo;MoribundMurdoch&rsquo; i.e. a Murdoch whoo happens to be &ldquo;moribund&rsquo; or in &rsquo;the process of dying&rsquo; I&rsquo;m a  lexicographer and your friendly neighborhood hypochondriac, serving up his visionary idiocy with unwavering commitment.</p>
+    <main class="wrap prose">
+      <h1>About this site</h1>
+      <p>
+        Hello — I’m MoribundMurdoch: lexicographer, open-source human, recovering
+        fubarist, and someone trying to accelerate the velocity of ideas without
+        stuffing everything into one soulless CMS.
+      </p>
+      <p>
+        <strong>This repository is not the blog.</strong> It used to wear a Hugo skin
+        with empty post lists and placeholder widgets. That fought the actual use of
+        the domain: hosting small browser tools next to their source repos.
+      </p>
+      <p>What lives here now:</p>
+      <ul>
+        <li>A index of GitHub Pages webapps (MorTweetSRS, MorAlgorithms, …)</li>
+        <li>A short map of which MoribundMurdoch surface does which job</li>
+        <li>Static HTML only — no Hugo, no build step for the hub itself</li>
+      </ul>
+      <p>
+        For essays and neologisms, go to
+        <a href="https://moribundmurdoch.blogspot.com/" rel="noopener noreferrer"
+          >Blogspot</a
+        >. For meta-writing about the multi-site setup, see
+        <a href="https://moribundmurdoch.bearblog.dev/" rel="noopener noreferrer"
+          >Bearblog</a
+        >. For the main identity hub,
+        <a href="https://moribundmurdoch.com/" rel="noopener noreferrer"
+          >moribundmurdoch.com</a
+        >. For playful web aesthetics,
+        <a href="https://moribundmurdoch.neocities.org/" rel="noopener noreferrer"
+          >Neocities</a
+        >.
+      </p>
+      <p>
+        Source for this hub:
+        <a
+          href="https://github.com/MoribundMurdoch/MoribundMurdoch.github.io"
+          rel="noopener noreferrer"
+          ><code>MoribundMurdoch.github.io</code></a
+        >
+        · Unlicense.
+      </p>
+    </main>
 
-    </section>
-
-  </article>
-
-      </main>
-
-      <aside id="rightSidebar"
-               class="rightSidebar panel panel--right resize-drag"
-               data-paneldata-drag-handle=".panel__minimize"role="complementary"
-               aria-label="Right sidebar"><button class="panel__minimize"
-                    data-panel="rightSidebar"
-                    type="button"
-                    aria-label="Minimize right sidebar"
-                    title="Minimize">–</button>
-
-
-
-<section class="panel">
-  <h3>Archive</h3>
-  <p class="muted">Put archive widget here.</p>
-</section>
-
-<section class="panel">
-  <h3>Tags</h3>
-  <p class="muted">Put tags widget here.</p>
-</section>
-
-        </aside></div>
-
-    <footer class="footer-container" aria-label="Site footer">
-
-  
-  <div id="panelDock" class="panel-dock" aria-label="Minimized panels dock"></div>
-
-  <div id="socket">
-    <div class="footer-content">
-
-      
-      <div class="footer-column">
-        <h3>Socials</h3>
-        <div class="footer-links">
-          <a href="https://www.youtube.com/@moribundmurdoch" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a href="https://x.com/moribundmurdoch" target="_blank" rel="noopener noreferrer">X</a>
-          <a href="https://www.reddit.com/user/moribundmurdoch/" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a href="https://moribundmurdoch.neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a>
+    <footer class="site-footer">
+      <div class="wrap site-footer__grid">
+        <div>
+          <h3>Socials</h3>
+          <div class="site-footer__links">
+            <a href="https://www.youtube.com/@moribundmurdoch" rel="noopener noreferrer"
+              >YouTube</a
+            >
+            <a href="https://x.com/moribundmurdoch" rel="noopener noreferrer">X</a>
+            <a href="https://github.com/MoribundMurdoch" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <div class="site-footer__copy">
+          © <span id="year">2026</span> MoribundMurdoch ·
+          <a href="https://unlicense.org/" rel="noopener noreferrer">Unlicense</a>
         </div>
       </div>
+    </footer>
 
-      
-      <div class="footer-column">
-        <div class="copyright">
-          © 2026 MoribundMurdoch<br/>
-          Licensed under the
-          <a href="https://unlicense.org/" target="_blank" rel="noopener noreferrer">
-            The Unlicense
-          </a>.<br/>
-          <a href="https://github.com/MorDictionary/blogger-theme-mor-dictionary/tree/main"
-             target="_blank"
-             rel="noopener noreferrer">
-            GitHub Repository
-          </a>
-        </div>
-      </div>
-
-      
-      <div class="footer-column powered-by-github">
-        <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer" aria-label="Powered by GitHub Pages">
-          
-          <svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
-            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
-            -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21
-            2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1
-            .16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-            0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          Powered by GitHub Pages
-        </a>
-      </div>
-
-    </div> 
-
-
-    
-    <div class="back-to-top">
-      <button id="back-to-top" type="button">Back to Top</button>
-    </div>
-
-
-    
-    <div id="music-footer-bar">
-      <audio id="music-player">
-        <source src="https://ia600802.us.archive.org/28/items/mor-dictionary-theme-remastered/MorDictionary%20Theme%20%28Remastered%29.mp3"
-                type="audio/mpeg"/>
-      </audio>
-
-      <button id="play-button" type="button" aria-label="Play theme music">&#9654;</button>
-      <button id="pause-button" type="button" aria-label="Pause theme music" style="display:none;">&#10074;&#10074;</button>
-
-      <a href="https://soundcloud.com/mor-dictionary/mordictionary-theme-remastered-free-to-use-moribund-institute-suno"
-         id="track-label"
-         target="_blank"
-         rel="noopener noreferrer">
-        Now Playing: MorDictionary Theme
-      </a>
-    </div>
-
-  </div> 
-
-</footer>
-    
-  <script src="https://moribundmurdoch.github.io/js/panels.js" defer></script>
-
-  
-  <script src="https://moribundmurdoch.github.io/js/interact.min.js" defer></script>
-
-  
-  <script src="https://moribundmurdoch.github.io/js/panels-drag.js" defer></script>
-    
+    <script src="../js/site.js" defer></script>
   </body>
 </html>
