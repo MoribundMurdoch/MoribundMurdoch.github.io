@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository is a **static tools-shelf hub** (HTML/CSS/JS) for [moribundmurdoch.github.io](https://moribundmurdoch.github.io/). It does not run a backend. Individual webapps (e.g. MorTweetSRS, MorAlgorithms) live in **their own repos** — report vulnerabilities against the project that actually owns the code.
+This repository is a **static tools-shelf hub** (HTML/CSS/JS) for [moribundmurdoch.github.io](https://moribundmurdoch.github.io/). It does not run a backend. Individual webapps (e.g. MorTweetSRS, MorAlgorithms) live in **their own repos**. Report vulnerabilities against the project that actually owns the code.
 
 ## What we care about
 

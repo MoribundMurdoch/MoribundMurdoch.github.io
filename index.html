@@ -6,7 +6,7 @@
     <title>Tools · MoribundMurdoch</title>
     <meta
       name="description"
-      content="Small webapps and open experiments hosted on GitHub Pages — the tools shelf of the Murdoverse."
+      content="Small webapps and open experiments hosted on GitHub Pages: the tools shelf of the Murdoverse."
     />
     <link rel="icon" href="img/mor-icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,6 +71,7 @@
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="./" aria-current="page">Inventory</a>
+          <a href="#field-kit">Field kit</a>
           <a href="#murdoverse">World map</a>
           <a href="about/">Lore</a>
           <a href="https://moribundmurdoch.com/" rel="noopener">Main realm</a>
@@ -90,7 +91,8 @@
         </p>
         <div class="hero__stats">
           <span>Faction<strong>Moribund Institute</strong></span>
-          <span>Instances<strong>2 open</strong></span>
+          <span>Instances<strong>2 live</strong></span>
+          <span>Field kit<strong>12 linked</strong></span>
           <span>License<strong>Unlicense</strong></span>
         </div>
       </section>
@@ -98,7 +100,7 @@
       <section class="section wrap" id="tools" aria-labelledby="tools-heading">
         <div class="section__head reveal">
           <h2 id="tools-heading">Inventory</h2>
-          <p class="section__note">Equippable on GitHub Pages</p>
+          <p class="section__note">Live on GitHub Pages</p>
         </div>
 
         <div class="tool-grid">
@@ -117,6 +119,12 @@
             </p>
             <div class="tool-card__actions">
               <a class="btn btn--primary" href="MorTweetSRS/">Enter instance</a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/MorTweetSRS-Decks"
+                rel="noopener noreferrer"
+                >Decks</a
+              >
               <a
                 class="btn btn--ghost"
                 href="https://github.com/MoribundMurdoch/MorTweetSRS"
@@ -151,14 +159,348 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section class="section wrap" id="field-kit" aria-labelledby="kit-heading">
+        <div class="section__head reveal">
+          <h2 id="kit-heading">Field kit</h2>
+          <p class="section__note">Repos &amp; tools (not Pages apps)</p>
+        </div>
+
+        <div class="tool-grid tool-grid--kit">
+          <article class="tool-card">
+            <span class="tool-card__slot">Desktop · Flashcards</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">moribund-flash</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Tauri</span>
+                <span class="tag">SRS</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Lightweight offline flashcard app (Tauri + Rust + vanilla JS). Sibling to
+              the wider MorFlash / <code>.mflash</code> ecosystem.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/moribund-flash"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/mflash-spec"
+                rel="noopener noreferrer"
+                >.mflash spec</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">CLI · Dev tools</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">morconcat</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">CLI</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Merge CSS, Markdown, Rust, JavaScript, and other files into one document
+              with a fast native utility. Handy for dumps and reviews.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/morconcat/releases"
+                rel="noopener noreferrer"
+                >Releases</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/morconcat"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">CLI · Crypto / Steg</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mor-steg-cli</h3>
+              <div class="tool-card__tags">
+                <span class="tag">age</span>
+                <span class="tag">steghide</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Lazy-people-friendly CLI for age-encrypted steganography with steghide.
+              Hide secrets in images without the ritual grind.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/mor-steg-cli/releases"
+                rel="noopener noreferrer"
+                >Releases</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/mor-steg-cli"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Workbench · UI</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">morblocks</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Tauri</span>
+                <span class="tag">Web Components</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Standalone workbench for building, previewing, testing, and exporting
+              modular web UI blocks (Web Components, Blogger embeds, plain HTML).
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/morblocks"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://moribundmurdoch.com/"
+                rel="noopener noreferrer"
+                >Main site</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Media · Animation</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">morblink</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">WebM</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Make a still character blink: trace the eyes, liquify-warp them shut,
+              export an alpha WebM or PNG sequence.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/morblink"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Media · Video</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">kdenloquist</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Kdenlive</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Audio-synced talking-photo tool for Kdenlive. Animate mouths from audio
+              with no keyframes.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/kdenloquist"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Theme · Blogger</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">Blogger theme</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Theme</span>
+                <span class="tag">Cloudflare</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Free modular dark Blogger theme built for MoribundMurdoch. Powers the
+              long-form blog realm.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/moribund-murdoch-blogger-theme"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://moribundmurdoch.blogspot.com/"
+                rel="noopener noreferrer"
+                >Live blog</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Theme · Neocities</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">Neocities theme</h3>
+              <div class="tool-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Free-to-use theme originally for MoribundMurdoch’s Neocities site. Fork
+              it for your own retro web den.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/neocities-theme-moribund-murdoch"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://moribundmurdoch.neocities.org/"
+                rel="noopener noreferrer"
+                >Live site</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Extension · MediaWiki</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">extimg helper</h3>
+              <div class="tool-card__tags">
+                <span class="tag">WASM</span>
+                <span class="tag">Browser</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Rust/WASM browser extension that builds safe MediaWiki
+              <code>&lt;extimg&gt;</code> tags for whitelisted external images. Pairs
+              with the PHP parser extension.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/mor_mediawiki_external_image_gui_helper"
+                rel="noopener noreferrer"
+                >Extension</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/mor_external_images_mediawiki"
+                rel="noopener noreferrer"
+                >PHP tag</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Desktop · Audio</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mormicwatch</h3>
+              <div class="tool-card__tags">
+                <span class="tag">egui</span>
+                <span class="tag">cpal</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Real-time microphone status, metrics, and health monitoring dashboard
+              in Rust (egui + cpal).
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/mormicwatch"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Asset · VTuber</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">Professor model</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Live2D</span>
+                <span class="tag">Avatar</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Professor Live2D VTuber model: scholarly avatar with academic attire,
+              glasses, and an expression that says “I know what I’m talking about.”
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/professorvtubermodel"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Dossier · X / Twitter</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">x_dossier</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">X</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Forkable Rust app for stalking MoribundMurdoch’s X account. Respects
+              data brokers’ privacy while violating his. Feel free to fork.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundMurdoch/moribundmurdoch_x_dossier"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://x.com/MoribundMurdoch"
+                rel="noopener noreferrer"
+                >@MoribundMurdoch</a
+              >
+            </div>
+          </article>
+        </div>
 
         <p class="note reveal">
-          More tools ship as separate repos under
-          <a href="https://github.com/MoribundMurdoch" rel="noopener noreferrer"
-            >@MoribundMurdoch</a
-          >
-          and land here when they need a browser front door. Desktop / CLI work
-          (MorFlash, morconcat, etc.) stays on GitHub Releases — not forced into Pages.
+          Only MorTweetSRS and MorAlgorithms currently ship as GitHub Pages apps.
+          Everything in the field kit lives in its own repo (releases, desktop,
+          themes, extensions). Full catalog:
+          <a href="https://github.com/MoribundMurdoch?tab=repositories" rel="noopener noreferrer"
+            >github.com/MoribundMurdoch</a
+          >.
         </p>
       </section>
 
@@ -172,7 +514,7 @@
           <li class="map-item map-item--here">
             <a class="map-item__site" href="./">GitHub Pages</a>
             <p class="map-item__role">
-              Tools shelf — small webapps, demos, and open experiments that run in the
+              Tools shelf: small webapps, demos, and open experiments that run in the
               browser.
             </p>
             <span class="map-item__here">● You are here</span>
@@ -185,7 +527,7 @@
               >moribundmurdoch.com</a
             >
             <p class="map-item__role">
-              Main hub — identity, project index, lexicography entry points, aggregation.
+              Main hub: identity, project index, lexicography entry points, aggregation.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
           </li>
@@ -197,7 +539,7 @@
               >Blogspot</a
             >
             <p class="map-item__role">
-              Primary long-form blog — essays, neologisms, playlists writeups, illustrated
+              Primary long-form blog: essays, neologisms, playlist writeups, illustrated
               posts.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
@@ -210,7 +552,7 @@
               >Bearblog</a
             >
             <p class="map-item__role">
-              Meta commentary — why the multi-site setup exists, platform notes, presence
+              Meta commentary: why the multi-site setup exists, platform notes, presence
               map.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
@@ -223,7 +565,7 @@
               >Neocities</a
             >
             <p class="map-item__role">
-              Aesthetic &amp; experimental web — Dewey Decimal playlists, retro pages,
+              Aesthetic and experimental web: Dewey Decimal playlists, retro pages,
               playground HTML.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
@@ -236,7 +578,7 @@
               >GitHub</a
             >
             <p class="map-item__role">
-              Source of truth for code — CLIs, Tauri apps, specs, themes, and the repos
+              Source of truth for code: CLIs, Tauri apps, specs, themes, and the repos
               behind these Pages apps.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>

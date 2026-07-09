@@ -1,4 +1,4 @@
-/* MoribundMurdoch.github.io — retro MMORPG tools shelf */
+/* MoribundMurdoch.github.io: retro MMORPG tools shelf */
 
 :root {
   --bg-deep: #0a0e18;
@@ -577,6 +577,23 @@ img {
   perspective: 900px;
 }
 
+.tool-grid--kit {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 0.9rem;
+}
+
+.tool-grid--kit .tool-card {
+  padding: 1.05rem 1rem 1rem;
+}
+
+.tool-grid--kit .tool-card__title {
+  font-size: 1.15rem;
+}
+
+.tool-grid--kit .tool-card__desc {
+  font-size: 1rem;
+}
+
 .tool-card {
   --rx: 0deg;
   --ry: 0deg;
@@ -983,7 +1000,7 @@ img {
   box-shadow: 0 0 14px var(--gold-glow);
 }
 
-/* music — now a "bard" strip */
+/* music: bard strip */
 .music-bar {
   margin-top: 1.25rem;
   display: flex;
