@@ -8,8 +8,11 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 
 | Surface | Job |
 |--------|-----|
-| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, field kit, Institute armory |
+| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, field kit, Institute armory, constellations |
 | **[moribund.institute](https://moribund.institute/)** | Faction HQ: curriculum, Institute public face |
+| **[WearYourDictionary](https://wearyourdictionary.com/)** | Wearable dictionary craft |
+| **[MorDictionary](https://mordictionary.org/)** | Neologisms and definitions |
+| **[MorFlashcards](https://github.com/MorFlashcards)** | Flashcard engines (`.mflash`) |
 | **[moribundmurdoch.com](https://moribundmurdoch.com/)** | Main hub: identity, projects, lexicography |
 | **[Blogspot](https://moribundmurdoch.blogspot.com/)** | Primary long-form blog |
 | **[Bearblog](https://moribundmurdoch.bearblog.dev/)** | Meta / multi-site commentary |
@@ -54,18 +57,36 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | [mor-style-binder](https://github.com/MoribundInstitute/mor-style-binder) | Modular CSS workbench |
 | [mor-xml-compendium](https://github.com/MoribundInstitute/mor-xml-compendium) | Layout bones pasteboard |
 
+## Constellations (classification)
+
+| Constellation | Job | Entry points |
+|---------------|-----|----------------|
+| Moribund Institute | Shared products & HQ | [site](https://moribund.institute/), [GitHub](https://github.com/MoribundInstitute) |
+| WearYourDictionary | Wearable dictionary craft | [site](https://wearyourdictionary.com/), [GitHub](https://github.com/WearYourDictionary) |
+| MorDictionary | Definitions & neologisms | [site](https://mordictionary.org/), [GitHub](https://github.com/MorDictionary) |
+| MorFlashcards | SRS engines / `.mflash` | [GitHub](https://github.com/MorFlashcards) |
+| MoribundMurdoch (personal) | This tools shelf | [Pages](https://moribundmurdoch.github.io/), [GitHub](https://github.com/MoribundMurdoch) |
+
 Apps and tools ship from **their own** repositories. This repo only hosts the hub (`/`).
+
+## SEO / discovery
+
+- Canonical URLs, Open Graph, Twitter cards, JSON-LD (`WebSite`, `Person`, `Organization`, `ItemList`)
+- [`robots.txt`](./robots.txt) + [`sitemap.xml`](./sitemap.xml)
+- GitHub topics: `github-pages`, `portfolio`, `static-site`, `webapps`, `spaced-repetition`, `flashcards`, `lexicography`, `moribund-institute`, `open-source`, `unlicense`, …
 
 ## Stack
 
 Plain static HTML, CSS, and a tiny `js/site.js`. **No Hugo.** Edit files, push to `main`, Pages serves them.
 
 ```
-index.html       # inventory, field kit, institute armory, map
+index.html       # inventory, field kit, institute, constellations, map
 about/           # what this site is for
 css/site.css
 js/site.js
 img/mor-icon.png
+robots.txt
+sitemap.xml
 ```
 
 ## License

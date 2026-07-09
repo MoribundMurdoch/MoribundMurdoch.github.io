@@ -3,12 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tools · MoribundMurdoch</title>
+    <title>Tools shelf · MoribundMurdoch | webapps, field kit, Institute</title>
     <meta
       name="description"
-      content="Small webapps and open experiments hosted on GitHub Pages: the tools shelf of the Murdoverse."
+      content="Personal tools shelf on GitHub Pages: MorTweetSRS, MorAlgorithms, desktop CLIs, and Moribund Institute projects like MorFlash, plus WearYourDictionary, MorDictionary, and MorFlashcards."
     />
-    <link rel="icon" href="img/mor-icon.png" type="image/png" />
+    <meta name="author" content="MoribundMurdoch" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0a0e18" />
+    <meta
+      name="keywords"
+      content="MoribundMurdoch, Moribund Institute, GitHub Pages, spaced repetition, flashcards, MorFlash, MorTweetSRS, MorAlgorithms, WearYourDictionary, MorDictionary, lexicography, open source, Unlicense"
+    />
+    <link rel="canonical" href="https://moribundmurdoch.github.io/" />
+    <link rel="icon" href="https://moribundmurdoch.github.io/img/mor-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://moribundmurdoch.github.io/img/mor-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MoribundMurdoch" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Tools shelf · MoribundMurdoch" />
+    <meta
+      property="og:description"
+      content="Webapps, personal field kit, and Moribund Institute armory. Founder hub for WearYourDictionary, MorDictionary, and MorFlashcards."
+    />
+    <meta property="og:url" content="https://moribundmurdoch.github.io/" />
+    <meta property="og:image" content="https://moribundmurdoch.github.io/img/mor-icon.png" />
+    <meta property="og:image:alt" content="MoribundMurdoch crest icon" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@moribundmurdoch" />
+    <meta name="twitter:creator" content="@moribundmurdoch" />
+    <meta name="twitter:title" content="Tools shelf · MoribundMurdoch" />
+    <meta
+      name="twitter:description"
+      content="GitHub Pages tools shelf: SRS webapps, CLIs, and Moribund Institute projects."
+    />
+    <meta name="twitter:image" content="https://moribundmurdoch.github.io/img/mor-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +48,120 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/site.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://moribundmurdoch.github.io/#website",
+            "name": "MoribundMurdoch tools shelf",
+            "alternateName": ["MoribundMurdoch.github.io", "Murdoverse tools shelf"],
+            "url": "https://moribundmurdoch.github.io/",
+            "description": "Personal tools shelf on GitHub Pages: webapps, field kit, and Moribund Institute products, with links to WearYourDictionary, MorDictionary, and MorFlashcards.",
+            "inLanguage": "en",
+            "isPartOf": { "@id": "https://moribundmurdoch.com/#person" },
+            "author": { "@id": "https://moribundmurdoch.com/#person" },
+            "publisher": { "@id": "https://moribundmurdoch.com/#person" },
+            "about": [
+              { "@id": "https://moribund.institute/#organization" },
+              { "@type": "Thing", "name": "spaced repetition" },
+              { "@type": "Thing", "name": "lexicography" },
+              { "@type": "Thing", "name": "open source tools" }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moribundmurdoch.github.io/#webpage",
+            "url": "https://moribundmurdoch.github.io/",
+            "name": "Tools shelf · MoribundMurdoch",
+            "isPartOf": { "@id": "https://moribundmurdoch.github.io/#website" },
+            "about": { "@id": "https://moribundmurdoch.com/#person" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://moribundmurdoch.github.io/img/mor-icon.png"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://moribundmurdoch.com/#person",
+            "name": "MoribundMurdoch",
+            "url": "https://moribundmurdoch.com/",
+            "image": "https://moribundmurdoch.github.io/img/mor-icon.png",
+            "jobTitle": "Founder",
+            "description": "Open-source human, lexicographer, and founder of the Moribund Institute. Accelerates the velocity of ideas across tools, blogs, and lexicography projects.",
+            "worksFor": { "@id": "https://moribund.institute/#organization" },
+            "sameAs": [
+              "https://github.com/MoribundMurdoch",
+              "https://github.com/MoribundInstitute",
+              "https://github.com/WearYourDictionary",
+              "https://github.com/MorDictionary",
+              "https://github.com/MorFlashcards",
+              "https://x.com/moribundmurdoch",
+              "https://www.youtube.com/@moribundmurdoch",
+              "https://moribund.institute/",
+              "https://moribundmurdoch.blogspot.com/",
+              "https://moribundmurdoch.bearblog.dev/",
+              "https://moribundmurdoch.neocities.org/",
+              "https://wearyourdictionary.com/",
+              "https://mordictionary.org/"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://moribund.institute/#organization",
+            "name": "Moribund Institute",
+            "url": "https://moribund.institute/",
+            "founder": { "@id": "https://moribundmurdoch.com/#person" },
+            "sameAs": [
+              "https://github.com/MoribundInstitute",
+              "https://moribundinstitute.blogspot.com/",
+              "https://x.com/MoribundInst"
+            ],
+            "description": "Nerds and innovators preserving and accelerating the flow of ideas through open tools, learning systems, and creative software."
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://moribundmurdoch.github.io/#constellations",
+            "name": "Moribund constellations",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Moribund Institute",
+                "url": "https://moribund.institute/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "WearYourDictionary",
+                "url": "https://wearyourdictionary.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "MorDictionary",
+                "url": "https://mordictionary.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "MorFlashcards",
+                "url": "https://github.com/MorFlashcards"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "MoribundMurdoch personal tools",
+                "url": "https://moribundmurdoch.github.io/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="hud" role="region" aria-label="Character status">
@@ -73,6 +219,7 @@
           <a href="./" aria-current="page">Inventory</a>
           <a href="#field-kit">Field kit</a>
           <a href="#institute">Institute</a>
+          <a href="#constellations">Constellations</a>
           <a href="#murdoverse">World map</a>
           <a href="about/">Lore</a>
           <a href="https://moribundmurdoch.com/" rel="noopener">Main realm</a>
@@ -89,13 +236,16 @@
           Writing lives on <strong>Blogspot</strong> and <strong>Bearblog</strong>;
           aesthetics on <strong>Neocities</strong>; identity on
           <strong>moribundmurdoch.com</strong>. Faction HQ lives at
-          <strong>moribund.institute</strong>.
+          <strong>moribund.institute</strong>. Related constellations include
+          <strong>WearYourDictionary</strong>, <strong>MorDictionary</strong>, and
+          <strong>MorFlashcards</strong>.
         </p>
         <div class="hero__stats">
           <span>Faction<strong>Moribund Institute</strong></span>
           <span>Instances<strong>2 live</strong></span>
           <span>Field kit<strong>12 linked</strong></span>
           <span>Armory<strong>8 linked</strong></span>
+          <span>Constellations<strong>5</strong></span>
           <span>License<strong>Unlicense</strong></span>
         </div>
       </section>
@@ -777,6 +927,216 @@
         </p>
       </section>
 
+      <section
+        class="section wrap"
+        id="constellations"
+        aria-labelledby="constellations-heading"
+      >
+        <div class="section__head reveal">
+          <h2 id="constellations-heading">Constellations</h2>
+          <p class="section__note">How the prolific sky is classified</p>
+        </div>
+
+        <p class="class-lead reveal">
+          The Institute is not one monorepo. It is a set of <strong>constellations</strong>:
+          related GitHub accounts and surfaces with distinct jobs. Use this map when you
+          are hunting lexicography, wearable dictionary craft, flashcard engines, or
+          personal tools.
+        </p>
+
+        <div class="class-table wrap-flush reveal" role="list">
+          <article class="class-card" role="listitem">
+            <header class="class-card__head">
+              <h3 class="class-card__title">Moribund Institute</h3>
+              <span class="class-card__badge">Faction HQ</span>
+            </header>
+            <p class="class-card__job">
+              Shared products: learning systems, Blogger tooling, MorFlash, media tools,
+              curriculum face at moribund.institute.
+            </p>
+            <p class="class-card__tags" aria-label="Classes">
+              <span class="tag">learning</span>
+              <span class="tag">blogger</span>
+              <span class="tag">srs</span>
+              <span class="tag">open-tools</span>
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://moribund.institute/"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundInstitute"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a class="btn btn--ghost" href="#institute">Armory on this site</a>
+            </div>
+          </article>
+
+          <article class="class-card" role="listitem">
+            <header class="class-card__head">
+              <h3 class="class-card__title">WearYourDictionary</h3>
+              <span class="class-card__badge">Lex · wearables</span>
+            </header>
+            <p class="class-card__job">
+              Makes wearable dictionary entries more fun: Blogger theme, Neocities theme,
+              GIMP template plugin, and wearyourdictionary.com.
+            </p>
+            <p class="class-card__tags" aria-label="Classes">
+              <span class="tag">lexicography</span>
+              <span class="tag">wearables</span>
+              <span class="tag">design</span>
+              <span class="tag">gimp</span>
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://wearyourdictionary.com/"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/WearYourDictionary"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://wearyourdictionary.blogspot.com/"
+                rel="noopener noreferrer"
+                >Blog</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://wearyourdictionary.neocities.org/"
+                rel="noopener noreferrer"
+                >Neocities</a
+              >
+            </div>
+          </article>
+
+          <article class="class-card" role="listitem">
+            <header class="class-card__head">
+              <h3 class="class-card__title">MorDictionary</h3>
+              <span class="class-card__badge">Lex · definitions</span>
+            </header>
+            <p class="class-card__job">
+              Defines neologisms and hyperspecific phrasings. Themes, neocities presence,
+              mordictionary.org, and morphrasing adjacent work.
+            </p>
+            <p class="class-card__tags" aria-label="Classes">
+              <span class="tag">lexicography</span>
+              <span class="tag">neologisms</span>
+              <span class="tag">wiki-adjacent</span>
+              <span class="tag">language</span>
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://mordictionary.org/"
+                rel="noopener noreferrer"
+                >Website</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MorDictionary"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://mordictionary.blogspot.com/"
+                rel="noopener noreferrer"
+                >Blog</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://mordictionary.neocities.org/"
+                rel="noopener noreferrer"
+                >Neocities</a
+              >
+            </div>
+          </article>
+
+          <article class="class-card" role="listitem">
+            <header class="class-card__head">
+              <h3 class="class-card__title">MorFlashcards</h3>
+              <span class="class-card__badge">SRS · engines</span>
+            </header>
+            <p class="class-card__job">
+              The Institute’s flashcard division: headless <code>.mflash</code> core,
+              studio, viewer, and related offline engines (pairs with MorFlash /
+              moribund-flash).
+            </p>
+            <p class="class-card__tags" aria-label="Classes">
+              <span class="tag">spaced-repetition</span>
+              <span class="tag">mflash</span>
+              <span class="tag">rust</span>
+              <span class="tag">offline-first</span>
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MorFlashcards"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MorFlashcards/mflash-core"
+                rel="noopener noreferrer"
+                >mflash-core</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MorFlashcards/mflash-studio-rs"
+                rel="noopener noreferrer"
+                >studio</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch/mflash-spec"
+                rel="noopener noreferrer"
+                >spec</a
+              >
+            </div>
+          </article>
+
+          <article class="class-card class-card--here" role="listitem">
+            <header class="class-card__head">
+              <h3 class="class-card__title">MoribundMurdoch (personal)</h3>
+              <span class="class-card__badge">You are here</span>
+            </header>
+            <p class="class-card__job">
+              Personal tools shelf, field kit, and founder hub. Not the Institute
+              homepage; not the lexicography sites. Open-source experiments and Pages
+              webapps.
+            </p>
+            <p class="class-card__tags" aria-label="Classes">
+              <span class="tag">portfolio</span>
+              <span class="tag">webapps</span>
+              <span class="tag">developer-tools</span>
+              <span class="tag">github-pages</span>
+            </p>
+            <div class="tool-card__actions">
+              <a class="btn btn--primary" href="#tools">Inventory</a>
+              <a class="btn btn--ghost" href="#field-kit">Field kit</a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundMurdoch"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section wrap" id="murdoverse" aria-labelledby="map-heading">
         <div class="section__head reveal">
           <h2 id="map-heading">World map</h2>
@@ -802,6 +1162,32 @@
             <p class="map-item__role">
               Faction HQ: curriculum, Institute projects, and the public face of the
               Moribund Institute.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://wearyourdictionary.com/"
+              rel="noopener noreferrer"
+              >WearYourDictionary</a
+            >
+            <p class="map-item__role">
+              Wearable dictionary craft: entries, themes, and GIMP templates that make
+              lexical art wearable and fun.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://mordictionary.org/"
+              rel="noopener noreferrer"
+              >MorDictionary</a
+            >
+            <p class="map-item__role">
+              Lexicography hub: neologisms, hyperspecific phrasings, and dictionary-style
+              projects.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
           </li>
@@ -882,6 +1268,42 @@
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
           </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://github.com/WearYourDictionary"
+              rel="noopener noreferrer"
+              >GitHub (WearYourDictionary)</a
+            >
+            <p class="map-item__role">
+              Themes and plugins for wearable dictionary entries and related craft.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://github.com/MorDictionary"
+              rel="noopener noreferrer"
+              >GitHub (MorDictionary)</a
+            >
+            <p class="map-item__role">
+              Lexicography themes and sites for definitions and neologisms.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://github.com/MorFlashcards"
+              rel="noopener noreferrer"
+              >GitHub (MorFlashcards)</a
+            >
+            <p class="map-item__role">
+              Flashcard division: mflash engines, studio, and offline viewers.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
         </ul>
       </section>
     </main>
@@ -923,6 +1345,15 @@
             >
             <a href="https://github.com/MoribundInstitute" rel="noopener noreferrer"
               >Institute GitHub</a
+            >
+            <a href="https://wearyourdictionary.com/" rel="noopener noreferrer"
+              >WearYourDictionary</a
+            >
+            <a href="https://mordictionary.org/" rel="noopener noreferrer"
+              >MorDictionary</a
+            >
+            <a href="https://github.com/MorFlashcards" rel="noopener noreferrer"
+              >MorFlashcards</a
             >
           </div>
         </div>
