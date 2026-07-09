@@ -38,4 +38,9 @@ img/mor-icon.png
 
 ## License
 
-[Unlicense](https://unlicense.org/)
+[Unlicense](https://unlicense.org/) — public domain dedication; as open as it gets. See [LICENSE](./LICENSE).
+
+## Community
+
+- [Code of Conduct](./CODE_OF_CONDUCT.md) — Moribund Institute rules of engagement (code wins arguments; no drama)
+- [Security](./SECURITY.md) — how to report real vulnerabilities without the theater
