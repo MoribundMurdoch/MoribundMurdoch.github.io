@@ -10,9 +10,13 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 |--------|-----|
 | **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, field kit, Institute armory, constellations |
 | **[moribund.institute](https://moribund.institute/)** | Faction HQ: curriculum, Institute public face |
-| **[WearYourDictionary](https://wearyourdictionary.com/)** | Wearable dictionary craft |
-| **[MorDictionary](https://mordictionary.org/)** | Neologisms and definitions |
-| **[MorFlashcards](https://github.com/MorFlashcards)** | Flashcard engines (`.mflash`) |
+| **[WearYourDictionary](https://wearyourdictionary.com/)** | Wearable dictionary craft (DDC 391 / 413) |
+| **[MorDictionary](https://mordictionary.org/)** | Neologisms and definitions (DDC 413) |
+| **[MorFlashcards](https://github.com/MorFlashcards)** | Flashcard engines / `.mflash` (DDC 371.3) |
+| **[EnglishMoribund](https://github.com/EnglishMoribund)** | MorEnglish language craft (DDC 420) |
+| **[MandarinMurdoch](https://github.com/MandarinMurdoch)** | Mandarin learning projects (DDC 495.1) |
+| **[TechMoribundMurdoch](https://github.com/TechMoribundMurdoch)** | Computing / systems outpost (DDC 004) |
+| **[MammonistMurdo](https://github.com/MammonistMurdo)** | Economics / mammonist aesthetics (DDC 330) |
 | **[moribundmurdoch.com](https://moribundmurdoch.com/)** | Main hub: identity, projects, lexicography |
 | **[Blogspot](https://moribundmurdoch.blogspot.com/)** | Primary long-form blog |
 | **[Bearblog](https://moribundmurdoch.bearblog.dev/)** | Meta / multi-site commentary |
@@ -57,15 +61,42 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | [mor-style-binder](https://github.com/MoribundInstitute/mor-style-binder) | Modular CSS workbench |
 | [mor-xml-compendium](https://github.com/MoribundInstitute/mor-xml-compendium) | Layout bones pasteboard |
 
-## Constellations (classification)
+## Constellations (Dewey-classified)
 
-| Constellation | Job | Entry points |
-|---------------|-----|----------------|
-| Moribund Institute | Shared products & HQ | [site](https://moribund.institute/), [GitHub](https://github.com/MoribundInstitute) |
-| WearYourDictionary | Wearable dictionary craft | [site](https://wearyourdictionary.com/), [GitHub](https://github.com/WearYourDictionary) |
-| MorDictionary | Definitions & neologisms | [site](https://mordictionary.org/), [GitHub](https://github.com/MorDictionary) |
-| MorFlashcards | SRS engines / `.mflash` | [GitHub](https://github.com/MorFlashcards) |
-| MoribundMurdoch (personal) | This tools shelf | [Pages](https://moribundmurdoch.github.io/), [GitHub](https://github.com/MoribundMurdoch) |
+| Call # | Constellation | Job | Entry points |
+|--------|---------------|-----|----------------|
+| 001 | Moribund Institute | Shared products & HQ | [site](https://moribund.institute/), [GitHub](https://github.com/MoribundInstitute) |
+| 004 | TechMoribundMurdoch | Computing / systems | [GitHub](https://github.com/TechMoribundMurdoch) |
+| 330 | MammonistMurdo | Economics / mammonist aesthetics | [GitHub](https://github.com/MammonistMurdo), [theme](https://github.com/MoribundInstitute/mammonist-murdo-blogger) |
+| 371.3 | MorFlashcards | SRS engines / `.mflash` | [GitHub](https://github.com/MorFlashcards) |
+| 391 / 413 | WearYourDictionary | Wearable dictionary craft | [site](https://wearyourdictionary.com/), [GitHub](https://github.com/WearYourDictionary) |
+| 413 | MorDictionary | Definitions & neologisms | [site](https://mordictionary.org/), [GitHub](https://github.com/MorDictionary) |
+| 420 | EnglishMoribund | MorEnglish language craft | [GitHub](https://github.com/EnglishMoribund) |
+| 495.1 | MandarinMurdoch | Mandarin learning | [GitHub](https://github.com/MandarinMurdoch) |
+| 004 / 700 | MoribundMurdoch (personal) | This tools shelf | [Pages](https://moribundmurdoch.github.io/), [GitHub](https://github.com/MoribundMurdoch) |
+
+Sister-org **holdings** (repos under each account) are listed on the hub under [Constellations](https://moribundmurdoch.github.io/#constellations) and the [Dewey catalog](https://moribundmurdoch.github.io/#dewey).
+
+### WearYourDictionary holdings
+- [wearyourdictionary-gimp-template-plugin](https://github.com/WearYourDictionary/wearyourdictionary-gimp-template-plugin)
+- [wear-your-dictionary-blogger-theme](https://github.com/WearYourDictionary/wear-your-dictionary-blogger-theme)
+- [neocities-theme-wear-your-dictionary](https://github.com/WearYourDictionary/neocities-theme-wear-your-dictionary)
+
+### MorDictionary holdings
+- [mordictionary.github.io](https://github.com/MorDictionary/mordictionary.github.io)
+- [blogger-theme-mor-dictionary](https://github.com/MorDictionary/blogger-theme-mor-dictionary)
+- [neocities-theme-mor-dictionary](https://github.com/MorDictionary/neocities-theme-mor-dictionary)
+- [blogger-theme-morphrasing](https://github.com/MorDictionary/blogger-theme-morphrasing)
+
+### MorFlashcards holdings
+- [mflash-core](https://github.com/MorFlashcards/mflash-core)
+- [mflash-studio-rs](https://github.com/MorFlashcards/mflash-studio-rs)
+- [mflash-viewer-rs](https://github.com/MorFlashcards/mflash-viewer-rs)
+- [LLM_MD_Cleaner](https://github.com/MorFlashcards/LLM_MD_Cleaner)
+
+### Language outposts
+- [blogger-theme-morenglish](https://github.com/EnglishMoribund/blogger-theme-morenglish) · [englishwords](https://github.com/EnglishMoribund/englishwords)
+- [blogger-theme-mandarin-moribund](https://github.com/MandarinMurdoch/blogger-theme-mandarin-moribund)
 
 Apps and tools ship from **their own** repositories. This repo only hosts the hub (`/`).
 
@@ -80,7 +111,7 @@ Apps and tools ship from **their own** repositories. This repo only hosts the hu
 Plain static HTML, CSS, and a tiny `js/site.js`. **No Hugo.** Edit files, push to `main`, Pages serves them.
 
 ```
-index.html       # inventory, field kit, institute, constellations, map
+index.html       # inventory, field kit, institute, constellations, Dewey catalog, map
 about/           # what this site is for
 css/site.css
 js/site.js
