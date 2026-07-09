@@ -72,6 +72,7 @@
         <nav class="site-nav" aria-label="Primary">
           <a href="./" aria-current="page">Inventory</a>
           <a href="#field-kit">Field kit</a>
+          <a href="#institute">Institute</a>
           <a href="#murdoverse">World map</a>
           <a href="about/">Lore</a>
           <a href="https://moribundmurdoch.com/" rel="noopener">Main realm</a>
@@ -87,12 +88,14 @@
           This Pages site is the launchpad for offline-friendly tools and experiments.
           Writing lives on <strong>Blogspot</strong> and <strong>Bearblog</strong>;
           aesthetics on <strong>Neocities</strong>; identity on
-          <strong>moribundmurdoch.com</strong>.
+          <strong>moribundmurdoch.com</strong>. Faction HQ lives at
+          <strong>moribund.institute</strong>.
         </p>
         <div class="hero__stats">
           <span>Faction<strong>Moribund Institute</strong></span>
           <span>Instances<strong>2 live</strong></span>
           <span>Field kit<strong>12 linked</strong></span>
+          <span>Armory<strong>8 linked</strong></span>
           <span>License<strong>Unlicense</strong></span>
         </div>
       </section>
@@ -497,10 +500,280 @@
         <p class="note reveal">
           Only MorTweetSRS and MorAlgorithms currently ship as GitHub Pages apps.
           Everything in the field kit lives in its own repo (releases, desktop,
-          themes, extensions). Full catalog:
+          themes, extensions). Full personal catalog:
           <a href="https://github.com/MoribundMurdoch?tab=repositories" rel="noopener noreferrer"
             >github.com/MoribundMurdoch</a
           >.
+        </p>
+      </section>
+
+      <section class="section wrap" id="institute" aria-labelledby="institute-heading">
+        <div class="section__head reveal">
+          <h2 id="institute-heading">Institute armory</h2>
+          <p class="section__note">Moribund Institute products</p>
+        </div>
+
+        <div class="tool-grid tool-grid--kit">
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Flagship SRS</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">MorFlash</h3>
+              <div class="tool-card__tags">
+                <span class="tag">SRS</span>
+                <span class="tag">Offline</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Customizable offline flashcard app for spaced repetition. Import many
+              formats, free reposition of cards and media, themes and sound. Institute
+              flagship (pairs with personal <code>moribund-flash</code>).
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/MorFlash"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://moribundinstitute.github.io/morflash-guide/"
+                rel="noopener noreferrer"
+                >Dev guide</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://moribund.institute/"
+                rel="noopener noreferrer"
+                >Institute</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Theme forge</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">Blogger theme editor</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">Blogger</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Build, customize, and export Blogger XML themes. Reactive visual editor
+              for modern, responsive blog templates. Ecosystem links below.
+            </p>
+            <ul class="kit-subs">
+              <li>
+                <a
+                  href="https://github.com/MoribundInstitute/mor-blogger-theme-preset-compendium"
+                  rel="noopener noreferrer"
+                  >Theme presets</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/MoribundInstitute/mor-blogger-widget-blueprints"
+                  rel="noopener noreferrer"
+                  >Widget blueprints</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/MoribundInstitute/Mor-Blogger-Full-Theme-Compendium"
+                  rel="noopener noreferrer"
+                  >Full theme compendium</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/MoribundInstitute/blogger-theme-moribund-institute"
+                  rel="noopener noreferrer"
+                  >Institute terminal theme</a
+                >
+                ·
+                <a
+                  href="https://moribundinstitute.blogspot.com/"
+                  rel="noopener noreferrer"
+                  >live blog</a
+                >
+              </li>
+            </ul>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/mor_blogger_theme_editor"
+                rel="noopener noreferrer"
+                >Editor repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Learning vault</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mor_lms_vault</h3>
+              <div class="tool-card__tags">
+                <span class="tag">CLI</span>
+                <span class="tag">LMS</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Privacy-first, offline Rust CLI LMS. Track learning across Blogger,
+              MediaWiki, and federated web content with local E2E encryption and SM-2
+              SRS.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/mor_lms_vault"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Embeds</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mor-blogger-embeds</h3>
+              <div class="tool-card__tags">
+                <span class="tag">JS</span>
+                <span class="tag">Blogger</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Interactive embeds for Blogger posts: flashcards, quizzes, and more.
+              Drop study tools into long-form writing.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/mor-blogger-embeds"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Talking photo</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">ventriloquism-studio</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Audio</span>
+                <span class="tag">Offline</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Offline audio-synced talking photo tool. Animate mouths from audio.
+              Institute sibling to personal <code>kdenloquist</code>.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/ventriloquism-studio"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · CSS workbench</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mor-style-binder</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Rust</span>
+                <span class="tag">Desktop</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Desktop workbench for binding modular CSS sheets into one theme and
+              refactoring monolithic Blogger theme CSS into files.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/mor-style-binder"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Layout bones</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">mor-xml-compendium</h3>
+              <div class="tool-card__tags">
+                <span class="tag">XML</span>
+                <span class="tag">Pasteboard</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              Structural compendium for community pasteboard. Browse raw HTML/XML
+              layout bones (headers, footers, grids), copy a raw GitHub link, paste
+              into the desktop app to swap structure not just colors.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://github.com/MoribundInstitute/mor-xml-compendium"
+                rel="noopener noreferrer"
+                >Repo</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://morxml.blogspot.com/"
+                rel="noopener noreferrer"
+                >morxml blog</a
+              >
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <span class="tool-card__slot">Faction · Docs</span>
+            <div class="tool-card__top">
+              <h3 class="tool-card__title">morflash-guide</h3>
+              <div class="tool-card__tags">
+                <span class="tag">Pages</span>
+                <span class="tag">Docs</span>
+              </div>
+            </div>
+            <p class="tool-card__desc">
+              MorFlash developer guide: codebase walkthrough, architecture, and
+              contributor docs. The Institute’s Pages-hosted documentation instance.
+            </p>
+            <div class="tool-card__actions">
+              <a
+                class="btn btn--primary"
+                href="https://moribundinstitute.github.io/morflash-guide/"
+                rel="noopener noreferrer"
+                >Open guide</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/MoribundInstitute/morflash-guide"
+                rel="noopener noreferrer"
+                >Source</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          MoribundMurdoch founded the Moribund Institute to accelerate the velocity of
+          ideas. Faction HQ:
+          <a href="https://moribund.institute/" rel="noopener noreferrer"
+            >moribund.institute</a
+          >
+          · full institute repos:
+          <a
+            href="https://github.com/MoribundInstitute?tab=repositories"
+            rel="noopener noreferrer"
+            >github.com/MoribundInstitute</a
+          >. Thin comps and old theme forks stay on GitHub, not this shelf.
         </p>
       </section>
 
@@ -518,6 +791,19 @@
               browser.
             </p>
             <span class="map-item__here">● You are here</span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://moribund.institute/"
+              rel="noopener noreferrer"
+              >moribund.institute</a
+            >
+            <p class="map-item__role">
+              Faction HQ: curriculum, Institute projects, and the public face of the
+              Moribund Institute.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
           </li>
           <li class="map-item">
             <a
@@ -575,11 +861,24 @@
               class="map-item__site"
               href="https://github.com/MoribundMurdoch"
               rel="noopener noreferrer"
-              >GitHub</a
+              >GitHub (personal)</a
             >
             <p class="map-item__role">
-              Source of truth for code: CLIs, Tauri apps, specs, themes, and the repos
+              Personal source of truth: CLIs, Tauri apps, specs, themes, and the repos
               behind these Pages apps.
+            </p>
+            <span class="map-item__here" aria-hidden="true"></span>
+          </li>
+          <li class="map-item">
+            <a
+              class="map-item__site"
+              href="https://github.com/MoribundInstitute"
+              rel="noopener noreferrer"
+              >GitHub (Institute)</a
+            >
+            <p class="map-item__role">
+              Institute products: MorFlash, theme editor ecosystem, LMS vault, embeds,
+              and shared comps.
             </p>
             <span class="map-item__here" aria-hidden="true"></span>
           </li>
@@ -607,6 +906,9 @@
         <div>
           <h3>Portals</h3>
           <div class="site-footer__links">
+            <a href="https://moribund.institute/" rel="noopener noreferrer"
+              >Moribund Institute</a
+            >
             <a href="https://moribundmurdoch.com/" rel="noopener noreferrer"
               >Main site</a
             >
@@ -618,6 +920,9 @@
             >
             <a href="https://moribundmurdoch.neocities.org/" rel="noopener noreferrer"
               >Neocities</a
+            >
+            <a href="https://github.com/MoribundInstitute" rel="noopener noreferrer"
+              >Institute GitHub</a
             >
           </div>
         </div>

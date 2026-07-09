@@ -2,18 +2,20 @@
 
 **Tools shelf** for browser webapps hosted on GitHub Pages.
 
-Not a blog. Not the main identity site. Just a quiet index + static front door for small apps that already live in their own repos.
+Not a blog. Not the main identity site. Quiet index + front door for personal tools and a curated Moribund Institute armory.
 
 ## Site roles (Murdoverse)
 
 | Surface | Job |
 |--------|-----|
-| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps & demos |
+| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, field kit, Institute armory |
+| **[moribund.institute](https://moribund.institute/)** | Faction HQ: curriculum, Institute public face |
 | **[moribundmurdoch.com](https://moribundmurdoch.com/)** | Main hub: identity, projects, lexicography |
 | **[Blogspot](https://moribundmurdoch.blogspot.com/)** | Primary long-form blog |
 | **[Bearblog](https://moribundmurdoch.bearblog.dev/)** | Meta / multi-site commentary |
 | **[Neocities](https://moribundmurdoch.neocities.org/)** | Aesthetic & experimental web |
-| **[GitHub](https://github.com/MoribundMurdoch)** | Source code, CLIs, releases |
+| **[GitHub (personal)](https://github.com/MoribundMurdoch)** | Personal source, CLIs, releases |
+| **[GitHub (Institute)](https://github.com/MoribundInstitute)** | Institute products and comps |
 
 ## Live apps (GitHub Pages)
 
@@ -22,7 +24,7 @@ Not a blog. Not the main identity site. Just a quiet index + static front door f
 | MorTweetSRS | https://moribundmurdoch.github.io/MorTweetSRS/ | [MorTweetSRS](https://github.com/MoribundMurdoch/MorTweetSRS) |
 | MorAlgorithms | https://moribundmurdoch.github.io/MorAlgorithms/ | [MorAlgorithms](https://github.com/MoribundMurdoch/MorAlgorithms) |
 
-## Field kit (linked from the hub, not Pages apps)
+## Field kit (personal, not Pages apps)
 
 | Project | Kind |
 |---------|------|
@@ -39,14 +41,27 @@ Not a blog. Not the main identity site. Just a quiet index + static front door f
 | [professorvtubermodel](https://github.com/MoribundMurdoch/professorvtubermodel) | Live2D asset |
 | [x_dossier](https://github.com/MoribundMurdoch/moribundmurdoch_x_dossier) | X/Twitter dossier |
 
-Apps are published from **their own** repositories. This repo only hosts the hub (`/`).
+## Institute armory (MoribundInstitute)
+
+| Project | Kind |
+|---------|------|
+| [MorFlash](https://github.com/MoribundInstitute/MorFlash) | Flagship offline SRS |
+| [morflash-guide](https://moribundinstitute.github.io/morflash-guide/) | Dev guide (Pages) |
+| [mor_blogger_theme_editor](https://github.com/MoribundInstitute/mor_blogger_theme_editor) | Theme forge (+ presets, widgets, comps) |
+| [mor_lms_vault](https://github.com/MoribundInstitute/mor_lms_vault) | Privacy-first LMS CLI |
+| [mor-blogger-embeds](https://github.com/MoribundInstitute/mor-blogger-embeds) | Flashcards / quiz embeds |
+| [ventriloquism-studio](https://github.com/MoribundInstitute/ventriloquism-studio) | Talking photo studio |
+| [mor-style-binder](https://github.com/MoribundInstitute/mor-style-binder) | Modular CSS workbench |
+| [mor-xml-compendium](https://github.com/MoribundInstitute/mor-xml-compendium) | Layout bones pasteboard |
+
+Apps and tools ship from **their own** repositories. This repo only hosts the hub (`/`).
 
 ## Stack
 
 Plain static HTML, CSS, and a tiny `js/site.js`. **No Hugo.** Edit files, push to `main`, Pages serves them.
 
 ```
-index.html       # tools + murdoverse map
+index.html       # inventory, field kit, institute armory, map
 about/           # what this site is for
 css/site.css
 js/site.js
