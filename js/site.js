@@ -11,14 +11,6 @@
     });
   }
 
-  // HUD bars fill on load
-  requestAnimationFrame(() => {
-    document.querySelectorAll("[data-bar-fill]").forEach((el) => {
-      const pct = el.getAttribute("data-bar-fill");
-      if (pct != null) el.style.width = `${pct}%`;
-    });
-  });
-
   // Scroll reveals
   const revealables = document.querySelectorAll(".reveal, .tool-card");
   if (revealables.length) {
