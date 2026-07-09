@@ -424,9 +424,16 @@ img {
   color: var(--ink-dim);
 }
 
-.hero__lead strong {
+.hero__lead a {
   color: var(--gold-bright);
   font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+}
+
+.hero__lead a:hover {
+  color: #fff4c8;
+  text-decoration: underline;
 }
 
 .hero__stats {
@@ -443,10 +450,17 @@ img {
   text-transform: uppercase;
 }
 
-.hero__stats span strong {
+.hero__stats span strong,
+.hero__stats span a {
   color: var(--ink);
   font-weight: 400;
   margin-left: 0.35rem;
+  text-decoration: none;
+}
+
+.hero__stats span a:hover {
+  color: var(--gold-bright);
+  text-decoration: underline;
 }
 
 /* ----- sections ----- */
