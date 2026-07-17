@@ -154,11 +154,11 @@
     let open = false;
 
     const sectionLabel = {
-      tools: "Inventory",
-      "toolkit": "Toolkit",
+      tools: "Live apps",
+      toolkit: "Personal tools",
       institute: "Institute",
-      stacks: "Stacks",
-      murdoverse: "World map",
+      stacks: "Projects",
+      murdoverse: "Other sites",
       dewey: "Call table",
     };
 
@@ -255,8 +255,8 @@
         const id = live ? ensureId(card, title) : "";
         pushItem(items, {
           title,
-          category: "Stacks",
-          badge: deweyNum ? "DDC " + deweyNum : "Stack",
+          category: "Projects",
+          badge: deweyNum ? deweyNum : "Project",
           blurb: job,
           tags: clean([tags, holdings].join(" ")),
           dewey: clean([deweyNum, deweyLabel].join(" ")),
@@ -273,7 +273,7 @@
         const href = site ? site.getAttribute("href") : "";
         pushItem(items, {
           title,
-          category: "World map",
+          category: "Other sites",
           badge: "Map",
           blurb: role,
           tags: "",
@@ -296,8 +296,8 @@
           const link = row.querySelector("a[href]");
           pushItem(items, {
             title,
-            category: "Call table",
-            badge: call || "DDC",
+            category: "Topic index",
+            badge: call || "Code",
             blurb: clean([klass, holdings].join(" · ")),
             tags: holdings,
             dewey: call,
@@ -308,15 +308,15 @@
 
       // Section landmarks
       [
-        ["tools", "Inventory", "Live GitHub Pages webapps"],
-        ["toolkit", "Toolkit", "Personal CLIs, desktop tools, themes"],
-        ["institute", "Institute armory", "Moribund Institute products"],
-        ["stacks", "Stacks", "Dewey-classified constellations"],
-        ["dewey", "Dewey call table", "Compact Murdoverse call numbers"],
-        ["murdoverse", "World map", "Which surface does which job"],
-        ["stack-000", "Stack 000", "Information & computing"],
-        ["stack-300", "Stack 300", "Social sciences"],
-        ["stack-400", "Stack 400", "Language"],
+        ["tools", "Live apps", "Browser apps on this site"],
+        ["toolkit", "Personal tools", "CLIs, desktop apps, themes"],
+        ["institute", "Institute projects", "Moribund Institute products"],
+        ["stacks", "Projects", "Related hubs by topic"],
+        ["dewey", "Topic index", "Codes for project groups"],
+        ["murdoverse", "Other sites", "Which surface does which job"],
+        ["stack-000", "Info & computing", "Topic group 000"],
+        ["stack-300", "Society & learning", "Topic group 300"],
+        ["stack-400", "Language", "Topic group 400"],
       ].forEach(([id, title, blurb]) => {
         if (!doc.getElementById(id) && live) return;
         if (!live && !doc.getElementById(id)) return;
@@ -349,7 +349,7 @@
 
     const loadIndex = async () => {
       let items = buildLocalIndex();
-      // Lore page (or other thin pages): pull hub HTML so search still finds tools
+      // About page (or other thin pages): pull hub HTML so search still finds tools
       if (items.filter((i) => i.category !== "Section").length < 8 && hubBase) {
         try {
           const url = new URL("index.html", new URL(hubBase, location.href));
@@ -442,7 +442,7 @@
 
       if (!clean(q)) {
         panel.innerHTML =
-          '<p class="site-search__hint">Try <strong>flash</strong>, <strong>420</strong>, <strong>blogger</strong>, <strong>morenglish</strong>, or a Dewey class like <strong>400</strong>.</p>';
+          '<p class="site-search__hint">Try <strong>flash</strong>, <strong>blogger</strong>, <strong>morenglish</strong>, or a topic code like <strong>420</strong>.</p>';
         setOpen(true);
         return;
       }
