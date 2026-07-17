@@ -135,7 +135,7 @@
     player.addEventListener("play", () => showPlay(true));
   }
 
-  // ----- Site search (client-side index of this hub) -----
+  // ----- Site search (client-side index of this site) -----
   initSiteSearch();
 
   function initSiteSearch() {

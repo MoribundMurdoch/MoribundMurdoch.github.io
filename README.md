@@ -1,14 +1,14 @@
 # MoribundMurdoch.github.io
 
-**Tools shelf** for browser webapps hosted on GitHub Pages.
+**Tools site** for browser web apps hosted on GitHub Pages.
 
-Not a blog. Not the main identity site. Quiet index + front door for personal tools and curated Moribund Institute projects.
+Not a blog. Not the main identity site. A simple index and front door for personal tools and curated Moribund Institute projects.
 
 ## Site roles
 
 | Surface | Job |
 |--------|-----|
-| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: live apps, personal tools, Institute projects, topic groups |
+| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools site: live apps, personal tools, Institute projects, topic groups |
 | **[moribund.institute](https://moribund.institute/)** | Institute home · 001 |
 | **[TechMoribundMurdoch](https://github.com/TechMoribundMurdoch)** | Computing / systems · 004 |
 | **[MammonistMurdo](https://github.com/MammonistMurdo)** | Economics aesthetics · 330 |
@@ -17,7 +17,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | **[MorDictionary](https://mordictionary.org/)** | Neologisms and definitions · 413 |
 | **[MorEnglish](https://englishmoribund.github.io/)** / [EnglishMoribund](https://github.com/EnglishMoribund) | English project hub · 420 |
 | **[MandarinMurdoch](https://github.com/MandarinMurdoch)** | Mandarin learning · 495.1 |
-| **[moribundmurdoch.com](https://moribundmurdoch.com/)** | Main hub: identity, projects, lexicography |
+| **[moribundmurdoch.com](https://moribundmurdoch.com/)** | Main personal site: identity, projects, dictionaries |
 | **[Blogspot](https://moribundmurdoch.blogspot.com/)** | Primary long-form blog |
 | **[Bearblog](https://moribundmurdoch.bearblog.dev/)** | Meta / multi-site commentary |
 | **[Neocities](https://moribundmurdoch.neocities.org/)** | Aesthetic & experimental web |
@@ -33,7 +33,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 
 ## Personal tools (not Pages apps)
 
-Grouped by job on the hub.
+Grouped by job on the site.
 
 | Group | Projects |
 |-------|----------|
@@ -53,7 +53,7 @@ Grouped by job on the hub.
 
 ## Projects (topic groups)
 
-On the hub: [info & computing](https://moribundmurdoch.github.io/#stack-000) · [society & learning](https://moribundmurdoch.github.io/#stack-300) · [language](https://moribundmurdoch.github.io/#stack-400) · [topic index](https://moribundmurdoch.github.io/#dewey)
+On the site: [info & computing](https://moribundmurdoch.github.io/#stack-000) · [society & learning](https://moribundmurdoch.github.io/#stack-300) · [language](https://moribundmurdoch.github.io/#stack-400) · [topic index](https://moribundmurdoch.github.io/#dewey)
 
 | Topic group | Code | Project group | Entry points |
 |-------------|------|---------------|----------------|
@@ -67,20 +67,20 @@ On the hub: [info & computing](https://moribundmurdoch.github.io/#stack-000) · 
 | | 420 | MorEnglish / EnglishMoribund | [site](https://englishmoribund.github.io/), [GitHub](https://github.com/EnglishMoribund) |
 | | 495.1 | MandarinMurdoch | [GitHub](https://github.com/MandarinMurdoch) |
 
-Sister-org **holdings** are listed on the hub under [Projects](https://moribundmurdoch.github.io/#stacks).
+Related **repos** are listed on the site under [Projects](https://moribundmurdoch.github.io/#stacks).
 
-### WearYourDictionary holdings
+### WearYourDictionary repos
 - [wearyourdictionary-gimp-template-plugin](https://github.com/WearYourDictionary/wearyourdictionary-gimp-template-plugin)
 - [wear-your-dictionary-blogger-theme](https://github.com/WearYourDictionary/wear-your-dictionary-blogger-theme)
 - [neocities-theme-wear-your-dictionary](https://github.com/WearYourDictionary/neocities-theme-wear-your-dictionary)
 
-### MorDictionary holdings
+### MorDictionary repos
 - [mordictionary.github.io](https://github.com/MorDictionary/mordictionary.github.io)
 - [blogger-theme-mor-dictionary](https://github.com/MorDictionary/blogger-theme-mor-dictionary)
 - [neocities-theme-mor-dictionary](https://github.com/MorDictionary/neocities-theme-mor-dictionary)
 - [blogger-theme-morphrasing](https://github.com/MorDictionary/blogger-theme-morphrasing)
 
-### MorFlashcards holdings
+### MorFlashcards repos
 - [mflash-core](https://github.com/MorFlashcards/mflash-core)
 - [mflash-studio-rs](https://github.com/MorFlashcards/mflash-studio-rs)
 - [mflash-viewer-rs](https://github.com/MorFlashcards/mflash-viewer-rs)
@@ -90,13 +90,13 @@ Sister-org **holdings** are listed on the hub under [Projects](https://moribundm
 - **MorEnglish** (420): [englishmoribund.github.io](https://englishmoribund.github.io/) · [MorEnglish_Sentence_Miner](https://github.com/EnglishMoribund/MorEnglish_Sentence_Miner) · [mflash export](https://github.com/EnglishMoribund/MorEnglish_Sentence_Miner_mflash_export) · [englishwords](https://github.com/EnglishMoribund/englishwords) · [blogger-theme-morenglish](https://github.com/EnglishMoribund/blogger-theme-morenglish)
 - [blogger-theme-mandarin-moribund](https://github.com/MandarinMurdoch/blogger-theme-mandarin-moribund)
 
-Apps and tools ship from **their own** repositories. This repo only hosts the hub (`/`).
+Apps and tools ship from **their own** repositories. This repo only hosts the index site (`/`).
 
 ## SEO / discovery
 
 - Canonical URLs, Open Graph, Twitter cards, JSON-LD (`WebSite`, `Person`, `Organization`, `ItemList`)
 - [`robots.txt`](./robots.txt) + [`sitemap.xml`](./sitemap.xml)
-- GitHub topics: `github-pages`, `portfolio`, `static-site`, `webapps`, `spaced-repetition`, `flashcards`, `lexicography`, `moribund-institute`, `open-source`, `unlicense`, …
+- GitHub topics: `github-pages`, `portfolio`, `static-site`, `webapps`, `spaced-repetition`, `flashcards`, `dictionaries`, `moribund-institute`, `open-source`, `unlicense`, …
 
 ## Tech stack
 
