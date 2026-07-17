@@ -77,6 +77,33 @@
             <span class="brand__sub">Lexicographer · Lv ∞ · Lore codex</span>
           </span>
         </a>
+        <div class="site-search" role="search" data-site-search data-search-hub="../">
+          <label class="sr-only" for="site-search-input">Search the tools shelf</label>
+          <div class="site-search__field">
+            <span class="site-search__icon" aria-hidden="true">⌕</span>
+            <input
+              id="site-search-input"
+              class="site-search__input"
+              type="search"
+              name="q"
+              placeholder="Search tools, stacks, Dewey…"
+              autocomplete="off"
+              spellcheck="false"
+              enterkeyhint="search"
+              aria-controls="site-search-results"
+              aria-autocomplete="list"
+              aria-expanded="false"
+            />
+            <kbd class="site-search__hotkey" aria-hidden="true">/</kbd>
+          </div>
+          <div
+            id="site-search-results"
+            class="site-search__results"
+            role="listbox"
+            aria-label="Search results"
+            hidden
+          ></div>
+        </div>
         <nav class="site-nav" aria-label="Primary">
           <a href="../">Inventory</a>
           <a href="../#field-kit">Field kit</a>
