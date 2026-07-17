@@ -155,7 +155,7 @@
 
     const sectionLabel = {
       tools: "Inventory",
-      "field-kit": "Field kit",
+      "toolkit": "Toolkit",
       institute: "Institute",
       stacks: "Stacks",
       murdoverse: "World map",
@@ -309,7 +309,7 @@
       // Section landmarks
       [
         ["tools", "Inventory", "Live GitHub Pages webapps"],
-        ["field-kit", "Field kit", "Personal CLIs, desktop tools, themes"],
+        ["toolkit", "Toolkit", "Personal CLIs, desktop tools, themes"],
         ["institute", "Institute armory", "Moribund Institute products"],
         ["stacks", "Stacks", "Dewey-classified constellations"],
         ["dewey", "Dewey call table", "Compact Murdoverse call numbers"],

@@ -8,7 +8,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 
 | Surface | Job |
 |--------|-----|
-| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, field kit, Institute armory, Dewey stacks |
+| **[moribundmurdoch.github.io](https://moribundmurdoch.github.io/)** | Tools shelf: webapps, toolkit, Institute armory, Dewey stacks |
 | **[moribund.institute](https://moribund.institute/)** | Faction HQ · DDC 001 |
 | **[TechMoribundMurdoch](https://github.com/TechMoribundMurdoch)** | Computing / systems · DDC 004 |
 | **[MammonistMurdo](https://github.com/MammonistMurdo)** | Economics aesthetics · DDC 330 |
@@ -31,7 +31,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | MorTweetSRS | https://moribundmurdoch.github.io/MorTweetSRS/ | [MorTweetSRS](https://github.com/MoribundMurdoch/MorTweetSRS) |
 | MorAlgorithms | https://moribundmurdoch.github.io/MorAlgorithms/ | [MorAlgorithms](https://github.com/MoribundMurdoch/MorAlgorithms) |
 
-## Field kit (personal, not Pages apps)
+## Toolkit (personal, not Pages apps)
 
 Grouped by job on the hub.
 
@@ -103,7 +103,7 @@ Apps and tools ship from **their own** repositories. This repo only hosts the hu
 Plain static HTML, CSS, and a tiny `js/site.js`. **No Hugo.** Edit files, push to `main`, Pages serves them.
 
 ```
-index.html       # inventory, field kit, institute armory, stacks (Dewey), world map
+index.html       # inventory, toolkit, institute armory, stacks (Dewey), world map
 about/           # what this site is for
 css/site.css
 js/site.js
