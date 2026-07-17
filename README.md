@@ -13,7 +13,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | **[WearYourDictionary](https://wearyourdictionary.com/)** | Wearable dictionary craft (DDC 391 / 413) |
 | **[MorDictionary](https://mordictionary.org/)** | Neologisms and definitions (DDC 413) |
 | **[MorFlashcards](https://github.com/MorFlashcards)** | Flashcard engines / `.mflash` (DDC 371.3) |
-| **[EnglishMoribund](https://github.com/EnglishMoribund)** | MorEnglish language craft (DDC 420) |
+| **[MorEnglish](https://englishmoribund.github.io/)** / [EnglishMoribund](https://github.com/EnglishMoribund) | English project hub (DDC 420 · Language 400) |
 | **[MandarinMurdoch](https://github.com/MandarinMurdoch)** | Mandarin learning projects (DDC 495.1) |
 | **[TechMoribundMurdoch](https://github.com/TechMoribundMurdoch)** | Computing / systems outpost (DDC 004) |
 | **[MammonistMurdo](https://github.com/MammonistMurdo)** | Economics / mammonist aesthetics (DDC 330) |
@@ -71,7 +71,7 @@ Not a blog. Not the main identity site. Quiet index + front door for personal to
 | 371.3 | MorFlashcards | SRS engines / `.mflash` | [GitHub](https://github.com/MorFlashcards) |
 | 391 / 413 | WearYourDictionary | Wearable dictionary craft | [site](https://wearyourdictionary.com/), [GitHub](https://github.com/WearYourDictionary) |
 | 413 | MorDictionary | Definitions & neologisms | [site](https://mordictionary.org/), [GitHub](https://github.com/MorDictionary) |
-| 420 | EnglishMoribund | MorEnglish language craft | [GitHub](https://github.com/EnglishMoribund) |
+| 420 | MorEnglish / EnglishMoribund | English language craft (Language 400) | [site](https://englishmoribund.github.io/), [GitHub](https://github.com/EnglishMoribund) |
 | 495.1 | MandarinMurdoch | Mandarin learning | [GitHub](https://github.com/MandarinMurdoch) |
 | 004 / 700 | MoribundMurdoch (personal) | This tools shelf | [Pages](https://moribundmurdoch.github.io/), [GitHub](https://github.com/MoribundMurdoch) |
 
@@ -95,7 +95,7 @@ Sister-org **holdings** (repos under each account) are listed on the hub under [
 - [LLM_MD_Cleaner](https://github.com/MorFlashcards/LLM_MD_Cleaner)
 
 ### Language outposts
-- [blogger-theme-morenglish](https://github.com/EnglishMoribund/blogger-theme-morenglish) · [englishwords](https://github.com/EnglishMoribund/englishwords)
+- **MorEnglish** (DDC 420): [englishmoribund.github.io](https://englishmoribund.github.io/) · [MorEnglish_Sentence_Miner](https://github.com/EnglishMoribund/MorEnglish_Sentence_Miner) · [mflash export](https://github.com/EnglishMoribund/MorEnglish_Sentence_Miner_mflash_export) · [englishwords](https://github.com/EnglishMoribund/englishwords) · [blogger-theme-morenglish](https://github.com/EnglishMoribund/blogger-theme-morenglish)
 - [blogger-theme-mandarin-moribund](https://github.com/MandarinMurdoch/blogger-theme-mandarin-moribund)
 
 Apps and tools ship from **their own** repositories. This repo only hosts the hub (`/`).
